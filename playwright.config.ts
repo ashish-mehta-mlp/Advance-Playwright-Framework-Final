@@ -51,7 +51,7 @@ export default defineConfig({
   use: {
     baseURL: resolveBaseURL(),
     headless: false,
-    screenshot: ATTACH_SCREENSHOTS ? 'only-on-failure' : 'off',
+    screenshot: ATTACH_SCREENSHOTS ? 'on' : 'off',
     video: 'on',
     trace: 'on'
   },
