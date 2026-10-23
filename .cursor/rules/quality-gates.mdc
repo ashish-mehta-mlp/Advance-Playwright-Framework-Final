@@ -1,0 +1,13 @@
+---
+description: Mandatory project quality review before creating a pull request.
+alwaysApply: true
+---
+
+Before raising a pull request, read root `AGENTS.md` and run all four canonical gate checklists against the complete proposed diff. The canonical definitions and exact PR output formats are in:
+
+- `.agents/skills/ai-slop/SKILL.md`
+- `.agents/skills/ponytail/SKILL.md`
+- `.agents/skills/over-engineering/SKILL.md`
+- `.agents/skills/framework-patterns/SKILL.md`
+
+Fix findings, rerun affected gates, and include the four reports in the PR. Never report a pass without completing the review.
